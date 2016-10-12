@@ -7,16 +7,8 @@ public class State {
         this.state = state;
     }
 
-    public void setAsInitial() {
-        isInitial = true;
-    }
-
     public void setAsFinal() {
         isFinal = true;
-    }
-
-    public Boolean isInitial() {
-        return isInitial;
     }
 
     public Boolean isFinal() {

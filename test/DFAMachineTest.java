@@ -4,8 +4,6 @@ import org.junit.Test;
 
 import java.util.List;
 
-import static org.junit.Assert.*;
-
 public class DFAMachineTest {
 
     private List<State> allStates;
@@ -15,7 +13,6 @@ public class DFAMachineTest {
     @Before
     public void init() {
         State q1 = new State("q1");
-        q1.setAsInitial();
         State q2 = new State("q2");
         State q3 = new State("q3");
         q3.setAsFinal();

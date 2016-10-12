@@ -31,7 +31,7 @@ public class TransitionFunction {
         return getState(allStates, newStates);
     }
 
-    public State getState(List<State> allStates, String stateToGet) {
+    private State getState(List<State> allStates, String stateToGet) {
         State resultantState = null;
         for (State state : allStates) {
             if(state.toString().equals(stateToGet)) {

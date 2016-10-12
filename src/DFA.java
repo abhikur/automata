@@ -8,7 +8,6 @@ public class DFA {
         HashMap<String, Object> tupple = new HashMap<>();
         List<State> states = new ArrayList<>();
         State initialState = new State("q1");
-        initialState.setAsInitial();
         State intermediateState = new State("q2");
         State finalState = new State("q3");
         finalState.setAsFinal();
