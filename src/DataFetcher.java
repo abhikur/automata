@@ -22,7 +22,7 @@ public class DataFetcher {
     }
 
     public Boolean isRegularLanguage() {
-        JSONObject inputJSON = fetchInputFile();
+        JSONObject inputJSON = fetchInputFile("inputFile.json");
         List<State> states = (List<State>) inputJSON.get("states");
         State initialState = new State((String) inputJSON.get("initialState"));
         String transitionFunction = (String) inputJSON.get("transitionFunction");
