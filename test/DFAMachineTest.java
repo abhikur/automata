@@ -2,11 +2,12 @@ import junit.framework.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class DFAMachineTest {
 
-    private List<State> allStates;
+    private List<State> allStates = new ArrayList<>();
     private String transitionFunctionString;
     private State initialState;
 

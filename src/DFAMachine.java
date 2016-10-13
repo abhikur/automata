@@ -18,8 +18,12 @@ public class DFAMachine {
         String[] alphabets = string.split("");
         State currentState = initialState;
         for (String alphabet : alphabets) {
-            currentState = transitionFunction.getNextState(currentState, alphabet, allStates);
+            if(!alphabet.equals("")) {
+                currentState = transitionFunction.getNextState(currentState, alphabet, allStates);
+            }
         }
         return currentState.isFinal();
     }
+
+
 }
